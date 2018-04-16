@@ -11,8 +11,6 @@ let dWord = wordToGuess.displayWord.join(" ")
 let wordLength = wordToGuess.displayWord.length;
 
 let askQuestion = function() {
-    let randomWord = wordBank[Math.floor(Math.random() * wordBank.length)];
-    let guessedLetters = [];
     let question = {
         type: 'input',
         name: 'guess',
