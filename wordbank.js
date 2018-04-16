@@ -1,1 +1,1 @@
-module.exports.wordBank = ['javascript', 'nodejs', 'react', 'angular','mysql', 'backspace', 'rubyonrails', 'python', 'php', 'elixir',];
+module.exports.wordBank = ['javascript', 'nodejs', 'react', 'angular','mysql', 'haskel', 'rubyonrails', 'python', 'php', 'elixir', 'pearl', 'matlab'];

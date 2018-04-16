@@ -63,6 +63,7 @@ let askQuestion = function(wordToGuess, dWord, wordLength, guessedLetters) {
                 log(chalk.red('You are out of guesses'));
                 log(chalk.red(`The language was ${wordToGuess.word}`));
                 log(chalk.red("GAME OVER!!!"));
+                wordBank.splice(wordBank.indexOf(wordToGuess.word), 1);
                 checkIfWordsLeft();
             }  else if (wordLength === wordToGuess.lettersGuessedCount) {
                 log(chalk.blue('You guessed the language!'));
