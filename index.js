@@ -66,7 +66,7 @@ let askQuestion = function(wordToGuess, dWord, wordLength, guessedLetters) {
                 wordBank.splice(wordBank.indexOf(wordToGuess.word), 1);
                 checkIfWordsLeft();
             }  else if (wordLength === wordToGuess.lettersGuessedCount) {
-                log(chalk.blue('You guessed the language!'));
+                log(chalk.blue(`You guessed the language! It was ${wordToGuess.word}!`));
                 wordBank.splice(wordBank.indexOf(wordToGuess.word), 1);
                 checkIfWordsLeft();
             } else {
